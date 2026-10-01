@@ -67,43 +67,60 @@ The goal isn't to memorize Python.
 ---
 
 # 🚀 Getting Started
+
 ## Prerequisites
 - Python 3.8 or higher installed on your system. [Download Python](https://www.python.org/downloads/)
 - A code editor (e.g., VS Code, PyCharm, or Anaconda).
 
 ## Installation
 
-1. **Install Python and verify:**
+You have **two options**. Pick one based on your project needs.
 
+---
+
+### 🅰️ Option A: Simple Python (For General Development)
+
+Use this if you're building web apps, scripts, or working with Git repos.
+
+#### Install Python
+Setup
+**Linux:**
 ```bash
-python --version
+sudo apt update
+sudo apt install python3 python3-pip python3-venv -y
 ```
 
-2. **Clone the repository:**
+**Windows / macOS:**
+- Download from [python.org](https://www.python.org/downloads/)
+- During install, check **"Add Python to PATH"**
+
+#### Verify Installation
+```bash
+python3 --version
+```
+
+Expected output: `Python 3.11.x` (or higher)
+
+#### Set Up a Virtual Environment
+```bash
+python -m venv .venv
+source .venv/bin/activate    # Linux / macOS
+.venv\Scripts\activate       # Windows
+pip install -r requirements.txt
+```
+
+---
+
+### 🅱️ Option B: Anaconda + Jupyter Notebook (For Data Science / ML)
+
+Use this if you're doing data analysis, machine learning, or want an interactive notebook.
+
+#### [IDE Setup](Setup)
+
+## Clone the repository:**
 ```bash
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
-```
-   
-3. **Create a virtual environment:**
-
-```bash
-python -m venv .venv
-```
-
-Activate it:
-
-```bash
-source .venv/bin/activate    # Linux / macOS
-```
-
-```bash
-.venv\Scripts\activate       # Windows
-```
-
-4. Install dependencies:
-```bash
-pip install -r requirements.txt
 ```
 
 ---
@@ -113,26 +130,18 @@ pip install -r requirements.txt
 ```text
 learn-python/
 │
-├── 01-basics/
-├── 02-operators/
-├── 03-control-flow/
-├── 04-data-structures/
-├── 05-functions/
-├── 06-modules-packages/
-├── 07-file-handling/
-├── 08-error-handling/
-├── 09-oop/
-├── 10-pythonic-python/
-├── 11-useful-standard-library/
-├── 12-testing-debugging/
-├── 13-virtual-environments/
-├── 14-databases/
-├── 15-api-and-web/
-├── 16-data-science/
-├── 17-machine-learning/
-├── 18-automation/
-├── 19-dsa-with-python/
-└── 20-projects/
+├── Programming Basics
+├── 01_Python Basics/
+├── 02_Data Types/
+├── 03_Control FLow/
+├── 04_Functions and Modules/
+├── 05_Oop Concepts/
+├── 06_Exception Handling/
+├── 07_File Handling
+├── 08_Database Handling
+├── 09_RegEx
+├── 10_Packages or Libraries
+└── 11_Projects/
 ```
 
 Each topic should contain:
@@ -140,12 +149,11 @@ Each topic should contain:
 ```text
 topic/
 ├── README.md
-├── examples/
 ├── exercises/
 └── solutions/
 ```
 
-This keeps explanations, examples and practice separate.
+This keeps explanations and practice separate.
 
 ---
 
@@ -341,3 +349,4 @@ I’d love to hear from you!
 
 | [![TOP](https://img.shields.io/badge/_🔺_-Navigate_to_TOP_↑_-blue?style=for-the-badge&labelColor=white)](#Python_Basics) | [![Resources](https://img.shields.io/badge/📚_Back_to-Resources-A52A2A?style=for-the-badge&logo=book&logoColor=white)](https://github.com/rasenshuriken12/Resources) | [![GitHub](https://img.shields.io/badge/Back_to-GitHub-000?style=for-the-badge&logo=GitHub&logoColor=white)](https://github.com/rasenshuriken12/) |
 |---|---|---|
+
